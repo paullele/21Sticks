@@ -7,21 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		183F2B691DE3408D00FEEC71 /* GameMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183F2B681DE3408D00FEEC71 /* GameMenu.swift */; };
 		18D4DBA21DE1AAC40039FCAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D4DBA11DE1AAC40039FCAC /* AppDelegate.swift */; };
-		18D4DBA41DE1AAC40039FCAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D4DBA31DE1AAC40039FCAC /* ViewController.swift */; };
+		18D4DBA41DE1AAC40039FCAC /* GamePlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D4DBA31DE1AAC40039FCAC /* GamePlay.swift */; };
 		18D4DBA71DE1AAC40039FCAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D4DBA51DE1AAC40039FCAC /* Main.storyboard */; };
 		18D4DBA91DE1AAC40039FCAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D4DBA81DE1AAC40039FCAC /* Assets.xcassets */; };
 		18D4DBAC1DE1AAC40039FCAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D4DBAA1DE1AAC40039FCAC /* LaunchScreen.storyboard */; };
+		18D4DBB51DE1AB1D0039FCAC /* SticksEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D4DBB41DE1AB1D0039FCAC /* SticksEngine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		183F2B681DE3408D00FEEC71 /* GameMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameMenu.swift; sourceTree = "<group>"; };
 		18D4DB9E1DE1AAC40039FCAC /* 21Sticks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 21Sticks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D4DBA11DE1AAC40039FCAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		18D4DBA31DE1AAC40039FCAC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		18D4DBA31DE1AAC40039FCAC /* GamePlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlay.swift; sourceTree = "<group>"; };
 		18D4DBA61DE1AAC40039FCAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18D4DBA81DE1AAC40039FCAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18D4DBAB1DE1AAC40039FCAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18D4DBAD1DE1AAC40039FCAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18D4DBB41DE1AB1D0039FCAC /* SticksEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SticksEngine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,24 @@
 		18D4DBA01DE1AAC40039FCAC /* 21Sticks */ = {
 			isa = PBXGroup;
 			children = (
-				18D4DBA11DE1AAC40039FCAC /* AppDelegate.swift */,
-				18D4DBA31DE1AAC40039FCAC /* ViewController.swift */,
+				18D4DBB31DE1AAEF0039FCAC /* SupportFiles */,
+				18D4DBA31DE1AAC40039FCAC /* GamePlay.swift */,
+				183F2B681DE3408D00FEEC71 /* GameMenu.swift */,
+				18D4DBB41DE1AB1D0039FCAC /* SticksEngine.swift */,
 				18D4DBA51DE1AAC40039FCAC /* Main.storyboard */,
-				18D4DBA81DE1AAC40039FCAC /* Assets.xcassets */,
-				18D4DBAA1DE1AAC40039FCAC /* LaunchScreen.storyboard */,
-				18D4DBAD1DE1AAC40039FCAC /* Info.plist */,
 			);
 			path = 21Sticks;
+			sourceTree = "<group>";
+		};
+		18D4DBB31DE1AAEF0039FCAC /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				18D4DBAD1DE1AAC40039FCAC /* Info.plist */,
+				18D4DBA11DE1AAC40039FCAC /* AppDelegate.swift */,
+				18D4DBA81DE1AAC40039FCAC /* Assets.xcassets */,
+				18D4DBAA1DE1AAC40039FCAC /* LaunchScreen.storyboard */,
+			);
+			name = SupportFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,7 +105,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = apple;
 				TargetAttributes = {
 					18D4DB9D1DE1AAC30039FCAC = {
@@ -136,7 +150,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18D4DBA41DE1AAC40039FCAC /* ViewController.swift in Sources */,
+				183F2B691DE3408D00FEEC71 /* GameMenu.swift in Sources */,
+				18D4DBB51DE1AB1D0039FCAC /* SticksEngine.swift in Sources */,
+				18D4DBA41DE1AAC40039FCAC /* GamePlay.swift in Sources */,
 				18D4DBA21DE1AAC40039FCAC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -181,6 +197,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -231,6 +248,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -299,6 +317,7 @@
 				18D4DBB21DE1AAC40039FCAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
